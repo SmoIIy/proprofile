@@ -47,12 +47,16 @@ body {
 /* Arrows */
 .arrow-container {
     position: relative;
+    text-decoration: none;
+    color: white;
+    display: grid;
+    place-items: center;
+
 }
 
 .arrow-container .down-arrow {
     position: absolute;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 .down-arrow:nth-child(1){
     animation-delay: 200ms;
@@ -70,13 +74,23 @@ body {
         opacity: 1;
     } 
     100% {
-        transform: translate(0, 25px);
+        transform: translate(0, 50px);
         opacity: 0;
     }
 
 }
 
 
-.test {
-    height: 100vh;
+.content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+.content-container {
+    width: 40%;
+    border: white solid 1px;
 }

@@ -34,13 +34,13 @@ word.onmouseover = event => {
 
 //Scroll
 
-const downArrowButton1 = document.querySelector("#downArrowButton1"); 
+// const downArrowButton1 = document.querySelector("#downArrowButton1"); 
 
-downArrowButton1.addEventListener("click", () => {
-    window.scrollTo({
-        top: 1080,
-        behavior: "smooth"
-    });
-});
+// downArrowButton1.addEventListener("click", () => {
+//     window.scrollTo({
+//         document.querySelector("#content1"),
+//         behavior: "smooth"
+//     });
+// });
 
 
