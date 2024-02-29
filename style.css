@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --dark: rgb(18, 18, 18);
+    --yellow: rgb(253, 216, 53);
+    --blue: rgb(98, 0, 234);
+    
+    --c1: rgb(3, 7, 18);
+    --c2: #F4ADFF;
+    
+    --left-color: var(--c1);
+    --right-color: var(--c2);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono", monospace;
+    scroll-behavior: smooth;
+}
+  
+
+body {
+    background-color: var(--dark);
+    color: white;
+}
+
+.hero {
+    font-size: 7vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    gap: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h3 {
+    font-size: 2vw;
+}
+
+/* Arrows */
+.arrow-container {
+    position: relative;
+}
+
+.arrow-container .down-arrow {
+    position: absolute;
+    cursor: pointer;
+    
+}
+.down-arrow:nth-child(1){
+    animation-delay: 200ms;
+}
+.down-arrow:hover {
+    animation-name: duplicate-down;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+@keyframes duplicate-down {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    } 
+    100% {
+        transform: translate(0, 25px);
+        opacity: 0;
+    }
+
+}
+
+
+.test {
+    height: 100vh;
+}
