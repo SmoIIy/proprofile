@@ -82,11 +82,11 @@ body {
 
 
 .content {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 1400px;
     flex-wrap: wrap;
 }
