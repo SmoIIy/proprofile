@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --dark: rgb(18, 18, 18);
-    --yellow: rgb(253, 216, 53);
-    --blue: rgb(98, 0, 234);
-    
+    --dark: #2f4858;
+    --yellow: rgb(255, 243, 192);
+    --blue: #33517a;
+    --bluetwo: #595494;
+    --pinkyes: #f42069;
+    --purple-pink: #c9388e;
+    --purple: #914c9d;
     --c1: rgb(3, 7, 18);
     --c2: #F4ADFF;
     
@@ -19,11 +22,20 @@
     font-family: "Space Mono", monospace;
     scroll-behavior: smooth;
 }
+
+img {
+    width: 100%;
+    display: block;
+}
   
 
 body {
-    background-color: var(--dark);
+    background-color: var(--pinkyes);
     color: white;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 .hero {
@@ -32,6 +44,7 @@ body {
     display: grid;
     place-items: center;
     gap: 0;
+    background-color: var(--pinkyes);
 }
 
 .title {
@@ -46,12 +59,13 @@ body {
 
 /* Arrows */
 .arrow-container {
-    position: relative;
+    position: fixed;
+    left: 50px;
+    bottom: 70px;
     text-decoration: none;
     color: white;
     display: grid;
     place-items: center;
-
 }
 
 .arrow-container .down-arrow {
@@ -82,15 +96,30 @@ body {
 
 
 .content {
-    height: 80vh;
     display: flex;
     justify-content: center;
+    padding: 15px;
+    border-radius: 15px;
     gap: 15px;
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 1400px;
     flex-wrap: wrap;
+    background-color: var(--blue);
 }
 .content-container {
     width: 40%;
-    border: white solid 1px;
+    border: white dotted 1px;
+    padding: 36px;
+    background-color: var(--bluetwo);
+    border-radius: 15px;
+}
+.text-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.profileimage {
+    clip-path: circle(40% at 46% 40%);
+    box-shadow: 1px 1px 0 #000000;
 }
