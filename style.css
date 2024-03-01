@@ -34,10 +34,54 @@ body {
     color: white;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
 h3 {
     font-size: 2rem;
 }
+/* Sidebar */
+.sidebar {
+	text-align: center;
+	padding: 1em;
+	max-width: 80px;
+	position: fixed;
+	top: 0;
+	right: 25px;
+}
 
+.sidebar a {
+    text-decoration: none;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px dashed #fff;
+    color: #fff;
+    margin: 5px;
+}
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.sidebar a 	.icons {
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 20px;
+}
+.sidebar a p {
+    transform: translate(0, -25px);
+    opacity: 0;
+    transition: all 350ms ease;
+}
+.sidebar a:hover p {
+    transform: translate(-100px, -25px);
+    opacity: 1;
+    transition: all 350ms ease;
+}
+/* Sidebar*/
 .hero {
     font-size: 7vw;
     height: 100vh;
@@ -93,6 +137,37 @@ h3 {
     }
 
 }
+/* Animation scroll in */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.8s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+ul {
+    margin: 5px 25px;
+}
+li {
+    list-style: none;
+}
+
+li svg {
+    width: 14px;
+    height: 14px;
+}
+
+#skills {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 
 
 .content {
@@ -104,22 +179,20 @@ h3 {
     margin: 40px auto;
     max-width: 1400px;
     flex-wrap: wrap;
-    background-color: var(--blue);
 }
 .content-container {
     width: 40%;
-    border: white dotted 1px;
     padding: 36px;
-    background-color: var(--bluetwo);
     border-radius: 15px;
 }
 .text-container {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 12px;
     border-radius: 8px;
+    margin: 10px 0;
 }
 
 .profileimage {
     clip-path: circle(40% at 46% 40%);
-    box-shadow: 1px 1px 0 #000000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
