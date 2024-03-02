@@ -30,7 +30,7 @@ img {
   
 
 body {
-    background-color: var(--pinkyes);
+    background: linear-gradient(to right, #4776e6, #8e54e9);
     color: white;
 }
 
@@ -96,7 +96,7 @@ hr {
     display: grid;
     place-items: center;
     gap: 0;
-    background-color: var(--pinkyes);
+
 }
 
 .title {
