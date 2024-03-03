@@ -3,7 +3,7 @@
 
 :root {
     --dark: #2f4858;
-    --yellow: rgb(255, 243, 192);
+    --yellow: #ffffff;
     --blue: #33517a;
     --bluetwo: #595494;
     --pinkyes: #f42069;
@@ -217,6 +217,10 @@ li svg {
     
 }
 
+#content2 {
+    flex-wrap: nowrap;
+}
+
 .profileimage {
     clip-path: circle(40% at 46% 40%);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -230,8 +234,8 @@ li svg {
     display: flex;
 	margin: 0.625rem;
     overflow: hidden;
-	border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;	
 }
 
@@ -240,13 +244,13 @@ li svg {
     overflow-x: auto;
     height: 33.75rem;
     min-width: 18rem;
-    color: var(--dark);
+    color: var(--yellow);
     transition: all 0.45s ease-in-out;
     padding: 0.75rem 1.5rem;
 }
 
 .tab-content h2 {
-    color: var(--dark);
+    color: var(--yellow);
     font-size: 1.1rem;
     font-weight: 600;
     margin-top: 0;
@@ -263,10 +267,35 @@ li svg {
 }
 
 .tab-content img {
+    margin-top: 16px;
+    border-radius: 8px;
     max-width: 18rem;
     width: 80%;
     flex-grow: 1;
+    transition: all 250ms ease;
 }
+
+
+.tab-content a {
+    text-decoration: none;
+    color: var(--yellow);
+    width: 50px;
+    margin-top: 15px;
+    display: block;
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--yellow);
+    border-radius: 8px;
+    transition: all 400ms ease;
+
+} 
+.tab-content a:hover {
+    border-radius: 16px;
+    color: var(--dark);
+    background-color: var(--yellow);
+
+}
+
+
 
 .tabs {
     position: relative;
@@ -284,7 +313,7 @@ li svg {
     width: 100%;
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--yellow);
     overflow: hidden;
     text-align: left;
     height: 5.5rem;
@@ -308,8 +337,8 @@ li svg {
 .tabs .active, .tabs a:hover {
     font-weight: 700;
     outline: none;
-    color: var(--yellow);
-    border-right: 3px solid var(--yellow);
+    color: var(--dark);
+    border-right: 3px solid var(--dark);
 }
 
 .tabs a svg {
