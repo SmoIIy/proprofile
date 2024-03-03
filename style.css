@@ -32,7 +32,23 @@ img {
 body {
     background: linear-gradient(to right, #4776e6, #8e54e9);
     color: white;
+    background-size: 300% 300%;
+	animation: gradient 15s ease infinite;
+
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 body::-webkit-scrollbar {
     width: 10px;
