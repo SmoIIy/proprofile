@@ -288,14 +288,14 @@ li svg {
     overflow: hidden;
     text-align: left;
     height: 5.5rem;
-    padding: 0px 1.5rem;
+    padding: 0px 1.2rem;
     width: 20rem;
     gap: 1rem;
 }
 .tabs h2 {
-    color: var(--pinkyes);
+    color: var(--yellow);
     width: 100%;
-    padding: 0px 1.5rem;
+    padding: 0px 1.4rem;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -308,16 +308,16 @@ li svg {
 .tabs .active, .tabs a:hover {
     font-weight: 700;
     outline: none;
-    color: var(--pinkyes);
-    border-right: 3px solid var(--pinkyes);
+    color: var(--yellow);
+    border-right: 3px solid var(--yellow);
 }
 
 .tabs a svg {
     width: 2.25rem;
     height: 2.25rem;
-    stroke: var(--pinkyes);
+    stroke: var(--yellow);
 }
 
 .tabs .active svg, .tabs a:hover svg {
-    stroke: var(--pinkyes);
+    stroke: var(--yellow);
 }
