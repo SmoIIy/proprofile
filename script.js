@@ -7,7 +7,7 @@ let interval = null;
 
 word.onmouseover = event => {
     let interations = 0;
-
+    console.log(event.target.dataset.value);
     
 
     const interval = setInterval(() => {
